@@ -2,7 +2,7 @@ var container = document.getElementById('container')
 var slider = document.getElementById('slider');
 var slides = document.getElementsByClassName('slide').length;
 var buttons = document.getElementsByClassName('btn');
-
+ 
 
 var currentPosition = 0;
 var currentMargin = 0;

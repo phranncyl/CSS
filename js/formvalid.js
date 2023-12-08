@@ -1,6 +1,6 @@
 function handleFormSubmission(event) {
     event.preventDefault();
-
+ 
     var form = document.getElementById('contactForm');
     var nameInput = document.getElementById('name1');
     var emailInput = document.getElementById('email1');

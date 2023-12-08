@@ -7,7 +7,7 @@ function addToCart() {
     // Update the display
     updateCartDisplay();
 }
-
+ 
 function updateCartDisplay() {
     // Update the cart count in the HTML
     const cartItemCountElement = document.getElementById('cartItemCount');
