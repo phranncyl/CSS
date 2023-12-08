@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iPlan - Your Digital Planner Store">
+    <meta name="keywords" content="digital planner, planning, organization, productivity">
+    <meta name="author" content="Your Name">
+    <link rel="icon" href="img/mini-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>iPlan - Your Digital Planner Store</title>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="img/Logo.png" alt="iPlan Logo" width="60"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="shoppingCart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path d="M1 1.75A.75.75 0 011.75 1h1.628a1.75 1.75 0 011.734 1.51L5.18 3a65.25 65.25 0 0113.36 1.412.75.75 0 01.58.875 48.645 48.645 0 01-1.618 6.2.75.75 0 01-.712.513H6a2.503 2.503 0 00-2.292 1.5H17.25a.75.75 0 010 1.5H2.76a.75.75 0 01-.748-.807 4.002 4.002 0 012.716-3.486L3.626 2.716a.25.25 0 00-.248-.216H1.75A.75.75 0 011 1.75zM6 17.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+              </svg>
+              
+            <span id="cartItemCount">0</span>
+        </div>  
+</header>
+    <div class="Container_2">
+        <div class="item">
+            <div class="contact">
+                <div class="first-text">Let's get in touch </div>
+                <img src="./img/5124556.jpg" alt="" class="Contact_img">
+                <div class="social_links">
+                    <span class="second-text">Connect with us:</span>
+                    <ul class="media-links">
+                        <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                        <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                        <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                        <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="submit-form">
+                <h4 class="third-text">Contact Us</h4>
+                <form id="contactForm" onsubmit="handleFormSubmission(event)">
+                    <div class="input-box">
+                        <input type="text" name="name" class="input" id="name1" required>
+                        <label for="name1">Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" class="input" id="email1" required>
+                        <label for="email1">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" name="phone" class="input" id="phone1" pattern="[0-9]{10}" required>
+                        <label for="phone1">Phone</label>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="message" class="input" id="message1" cols="30" rows="10" required></textarea>
+                        <label for="message1">Message</label>
+                    </div>
+                    <input type="submit" class="btn" value="Submit">
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+<script src="js/formvalid.js"></script>
+
+</body>

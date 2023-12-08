@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPlan - Your Digital Planner Store</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="icon" href="img\mini-logo.png" type="image/x-icon"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img class="logo" src="img/Logo.png" alt="iPlan Logo" width="60px"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="shoppingCart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path d="M1 1.75A.75.75 0 011.75 1h1.628a1.75 1.75 0 011.734 1.51L5.18 3a65.25 65.25 0 0113.36 1.412.75.75 0 01.58.875 48.645 48.645 0 01-1.618 6.2.75.75 0 01-.712.513H6a2.503 2.503 0 00-2.292 1.5H17.25a.75.75 0 010 1.5H2.76a.75.75 0 01-.748-.807 4.002 4.002 0 012.716-3.486L3.626 2.716a.25.25 0 00-.248-.216H1.75A.75.75 0 011 1.75zM6 17.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+              </svg>
+              
+            <span id="cartItemCount">0</span>
+        </div>  
+</header>
+    <div class="christmas-banner">
+        <h2>🎄 Christmas Promotion Sale! Get 20% off on all digital planners. Use code: XMAS20 🎅</h2>
+    </div>
+
+
+    <section>
+        <div class="product-carousel">
+            <div class="product" id="shop">           
+                <img src="img/planner1.jpg" alt="Digital Planner 1">
+                <div class="product-details">
+                    <h2>Yearly Planner</h2>
+                    <p>Plan your entire year with our Yearly Planner. Stay organized, set goals, and track milestones effortlessly. 
+                            Make every day count with this essential tool for a productive and successful year.</p>
+                    <br>
+                    <p class="price">Price: $9.99</p>
+                    <button class="shopButton" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/planner2.jpg" alt="Digital Planner 2">
+                <div class="product-details">
+                    <h2>Skincare Planner</h2>
+                    <p>
+                        Elevate your skincare routine with our Skin Care Routine Planner. 
+                        Tailor your regimen, track progress, and achieve radiant skin. Make self-care a priority with this comprehensive skincare companion.
+                    </p>
+                    <br>
+                    <p class="price">Price: $9.99</p>
+                    <button id="shopButton" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/planner3.png" alt="Digital Planner 3">
+                <div class="product-details">
+                    <h2>Finance Planner</h2>
+                    <p>Take charge of your finances with our Finance Planner. 
+                        Budget effectively, set financial goals, and track expenses for a secure future. Achieve financial success with this indispensable planning tool.</p>
+                        <br>
+                        <p class="price">Price: $9.99</p>
+                    <button id="shopButton" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/healthy.jpeg" alt="Digital Planner 4">
+                <div class="product-details">
+                    <h2>Fitness Planner</h2>
+                    <p>Transform your fitness journey with our Fitness Planner. Set goals, plan workouts, and track progress systematically. 
+                        Cultivate a healthier lifestyle with this all-in-one fitness companion.</p>
+                        <br>
+                        <p class="price">Price: $9.99</p>
+                    <button id="shopButton" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img/kidsplanner.jpg" alt="Digital Planner 5">
+                <div class="product-details">
+                    <h2>Daily Routine Planner</h2>
+                    <p>Optimize your daily life with our Daily Routine Planner. 
+                        Plan each day, prioritize tasks, and foster a balanced lifestyle. Make the most of every moment with this essential daily planning tool.</p>
+                        <br>
+                        <p class="price">Price: $12.99</p>
+                    <button id="shopButton" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2023 iPlan - Digital Planner Store</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="https://www.twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-instagram'></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+<script>
+    function toggleDetails(productId) {
+        const productDetails = document.getElementById(productId).querySelector('.product-details');
+        productDetails.classList.toggle('active');
+    }
+</script>
+</body>
+
+</html>

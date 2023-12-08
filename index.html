@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPlan - Your Digital Planner Store</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="icon" href="img/mini-logo.png" type="image/x-icon"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img class="logo" src="img/Logo.png" alt="iPlan Logo" width="60"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="shoppingCart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path d="M1 1.75A.75.75 0 011.75 1h1.628a1.75 1.75 0 011.734 1.51L5.18 3a65.25 65.25 0 0113.36 1.412.75.75 0 01.58.875 48.645 48.645 0 01-1.618 6.2.75.75 0 01-.712.513H6a2.503 2.503 0 00-2.292 1.5H17.25a.75.75 0 010 1.5H2.76a.75.75 0 01-.748-.807 4.002 4.002 0 012.716-3.486L3.626 2.716a.25.25 0 00-.248-.216H1.75A.75.75 0 011 1.75zM6 17.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+              </svg>
+              
+            <span id="cartItemCount">0</span>
+        </div>  
+</header>
+    <div class="christmas-banner">
+        <h2>🎄 Christmas Promotion Sale! Get 20% off on all digital planners. Use code: XMAS20 🎅</h2>
+    </div>
+
+    <section class="main-img">
+        <h1 class="main-h1">Unlock Your Potential.</h1>
+        <p class="main.p">Elevate your organization game instantly. Sync, customize, and conquer your day efficiently</p>
+        <a href="shop.html">
+            <button type="button" class="shop-now" aria-label="Shop Now" style="margin-top: 20px;">Shop Now</button>
+        </a>
+    </section>
+
+    <div class="user-quotes">
+        <div id="container">
+            <div id="slider-container">
+              <span onclick="slideRight()" class="btn"></span>
+                <div id="slider">
+                  <div class="slide">                <img src="img/c1.png" alt="Creative Director Photo">
+                    <span>"The digital planner has revolutionized my organization! It's like having my entire life in my pocket, accessible anytime, anywhere"</span></div>
+                  <div class="slide">                <img src="img/c11.png" alt="Creative Director Photo">
+                    <span>"As a student, the digital planner keeps me on top of assignments and deadlines. It's a game-changer for my productivity."</span></div>
+                  <div class="slide">                <img src="img/c4.png" alt="Creative Director Photo">
+                    <span>"I never thought a digital planner could replace my love for physical notebooks, but this one did. It's sleek, efficient, and eco-friendly!"</span></div>
+                  <div class="slide">                <img src="img/c8.png" alt="Creative Director Photo">
+                    <span>"The user-friendly interface of the digital planner makes planning and scheduling a breeze. It's become an essential part of my daily routine."</span></div>
+                  <div class="slide">                <img src="img/c5.png" alt="Creative Director Photo">
+                    <span>"Being able to sync my digital planner across devices ensures I never miss a beat. It's the perfect companion for a busy lifestyle."</span></div>
+                  <div class="slide">                <img src="img/c2.png" alt="Creative Director Photo">
+                    <span>"The customization options in the digital planner allow me to tailor it to my preferences. It feels like it was designed just for me."</span></div>
+                  <div class="slide">                <img src="img/c10.png" alt="Creative Director Photo">
+                    <span>"I used to be skeptical about going digital with my planning, but the digital planner won me over. It's versatile, intuitive, and indispensable."</span></div>
+              </div>
+              <span onclick="slideLeft()" class="btn"></span>
+            </div>
+          </div>
+    </div>
+
+    <div class="advantages">
+        <h2>Advantages</h2>
+        <div class="advantages-carousel">
+            <div class="advantage-card">
+                <img src="img/ico/icons8-interactive-64.png" alt="Sync Icon">
+                <div class="advantage-card-details">
+                    <h3>Seamless Experience</h3>
+                    <p>Enjoy a seamless and intuitive digital planning experience with our user-friendly interface.</p>
+                </div>
+            </div>
+
+            <div class="advantage-card">
+                <img src="img/ico/icons8-sync-100.png" alt="Device Icon">
+                <div class="advantage-card-details">
+                    <h3>Sync Across Devices</h3>
+                    <p>Access your digital planners from anywhere and stay organized across all your devices.</p>
+                </div>
+            </div>
+
+            <div class="advantage-card">
+                <img src="img/ico/icons8-magic-100.png" alt="Customize Icon">
+                <div class="advantage-card-details">
+                    <h3>Customizable Interface</h3>
+                    <p>Customize your digital planning interface to suit your preferences and workflow.</p>
+                </div>
+            </div>
+
+            <div class="advantage-card">
+                <img src="img/ico/icons8-bar-64.png" alt="Productivity Icon">
+                <div class="advantage-card-details">
+                    <h3>Enhanced Productivity</h3>
+                    <p>Boost your productivity with enhanced features designed to streamline your planning process.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 iPlan - Digital Planner Store</p>
+    
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" >
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" >
+        </a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="https://www.twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <!-- Add more icons as needed -->
+        </div>
+    </footer>
+    <script src="js/javascript.js"></script>
+</body>
+
+
+</html>
